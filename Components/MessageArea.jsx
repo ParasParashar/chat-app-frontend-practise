@@ -20,7 +20,7 @@ const MessageArea = () => {
   }, [socket]);
 
   return (
-    <div className="bg-neutral-800 min-h-[500px]  rounded-lg w-full flex flex-col gap-3  p-3">
+    <div className="bg-neutral-800 min-h-[600px]  rounded-lg w-full flex flex-col gap-3  p-3">
       <p>{isConnected ? "Socket is connected" : "Not connected"}</p>
       {result.map((item) => (
         <p className="bg-blue-500 text-white p-3 rounded-full">{item}</p>
